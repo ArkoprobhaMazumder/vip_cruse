@@ -1,38 +1,331 @@
-.App {
-  text-align: center;
+p {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.mainbox {
+    width: 50%;
+    height: 28vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    margin: 20px auto;
+    position: relative;
+} */
+
+
+
+
+
+
+/* Banner Custom Box */
+.cust-carousel-box {
+    width: 100%;
+    position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cust-carousel-box::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0.5, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.cust-carousel-box .indicator-carosel-btn {
+    background-color: transparent !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cust-box1 {
+    width: 80%;
+    margin: auto;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    text-align: center;
+}
+
+.carousel-text {
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.carousel-title {
+    font-size: 85px;
+    font-weight: 750;
+}
+
+.cust-carousel-btn {
+    height: 2.5px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+
+.cust-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+}
+
+.cust-left {
+    position: absolute;
+    top: 46%;
+    left: 40px;
+}
+
+.cust-right {
+    position: absolute;
+    top: 46%;
+    right: 40px;
+}
+
+.banner-cust-box2{
+   
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    padding:1rem 0.5rem;
+    position: absolute;
+    left: -4rem;
+    top: 89%;
+}
+.banner-btn-icon{
+    padding: 25px 15px;
+}
+.banner-btn-icon::before{
+    content: "\f002";
+    font-family: "FontAwesome";
+}
+
+/* Customer review */
+.customer-review-section{
+    width: 100%;
+    background-image: url("./images/11.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cust-slider-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.cust-slider-img-box{
+    width: 10%;
+}
+.cust-slider-img-box img{
+    width: 100%;
+}
+.cust-slider-body{
+    width: 75%;
+    text-align: center;
+    font-size: 27px;
+    padding-top: 2rem;
+    line-height: 4rem;
+}
+.cust-slider-name{
+    padding-top: 2.5rem;
+    font-size: 24px;
+    font-weight: 600;
+}
+.cust-slider-desc{
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+/* slick-slider */
+.slick-next {
+    background-color: transparent !important;
+    cursor: pointer !important;
+}
+
+.slick-next::before {
+    content: "\f061" !important;
+    font-family: "FontAwesome" !important;
+    font-size: 25px !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+.slick-next:hover{
+    transition: all 0.5s ease-in-out !important;
+   transform: translateX(5px) !important;
+} 
+
+.slick-prev {
+    background-color: transparent !important;
+    cursor: pointer !important;
+}
+.slick-prev:hover{
+    transition: all 0.5s ease-in-out !important;
+   transform: translateX(-5px) !important;
+} 
+.slick-prev::before {
+    content: "\f060" !important;
+    font-family: "FontAwesome" !important;
+    font-size: 25px !important;
+    color: white !important;
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon::before {
+    display: none !important;
+}
+
+
+/* inspire section  */
+.ins-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.ins-text {
+    font-size: 19px;
+    font-weight: 350;
+}
+
+.cust-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cust-card-main {
+    width: 24%;
+    margin: auto;
+    padding: 10px 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cust-card-main:hover img.cust-card-img{
+    transition: all 0.5s ease-out;
+    transform: scale(1.02);
+}
+
+.cust-img-cont {
+    width: 100%;
+}
+
+.cust-card-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cust-card-body {
+    width: 100%;
+    text-align: start;
+    background-color: whitesmoke;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+
+.cust-card-title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.cust-card-text {
+    width: 100%;
+    font-size: 18px;
+    color: grey;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+
+
+/* responsive */
+
+@media(max-width:1199px){
+
+     /* banner section */
+     .banner-cust-box2{
+        left: 3.5%;
+        top: 82%;
+        width: 0 20px;
+     }
+     .carousel-title{
+        font-size: 65px
+     }
+}
+
+@media(max-width:992px) {
+    /* banner section */
+  
+    .carousel-text{
+        font-size: 20px;
+    }
+    .carousel-title{
+        font-size: 50px;
+    }
+    /* inspire section  */
+    .cust-card {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .cust-card-main {
+        width: 46%;
+    }
+    /* customer- review */
+    .cust-slider-body{
+        width: 100%;
+        font-size: 21px;
+    }
+}
+
+@media(max-width:768px) {
+
+    /* inspire section  */
+    .cust-card-main {
+        width: 48%;
+    }
+    /* banner  */
+    .carousel-title{
+        font-size: 37px;
+    }
+    /* customer- review */
+    .cust-slider-body{
+        width: 100%;
+        font-size: 17px;
+    }
+
+}
+
+@media(max-width:586px) {
+
+    /* inspire section  */
+    .cust-card-main {
+        width: 100%;
+    }
+    /* banner  */
+    .carousel-text{
+        font-size: 16px;
+    }
+    .carousel-title{
+        font-size: 30px;
+    }
+
 }

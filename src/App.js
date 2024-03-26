@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import "./App.css";
+import Banner from './Banner';
+import Inspire from './Inspire';
+import CustomerReview from './CustomerReview';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    
+      <Banner/>
+      <CustomerReview/>
+      <Inspire/>
+    </>
+  )
 }
 
-export default App;
+export default App
